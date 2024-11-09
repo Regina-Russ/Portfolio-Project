@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a917aa3c3d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--loading animation- diagonally cascading cubes-->
+
+   <!--add nav bar: add logo/pic- link to internal pages for about me, and contact me- link to external page portfolio - code burger menu for smaller displays-->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="./images/pfp.png" alt="profile picture" class="logo">
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#"> Portfolio</a></li>
+                <li><a href="#"> My Services</a></li>
+                <li><a href="#"> Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+   <!--about me: brief description of myself and interests - caroselle with languages proficient in-->
+<div>
+    <h1 class="sub-title">About Me</h1>
+    <h2>
+        Hello my name is <br> Regina Russell
+    </h2>
+    <p>I am an aspiring Software Engineer...ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem nam placeat amet fuga at minus? Sit nostrum architecto alias minima, obcaecati cum exercitationem provident suscipit doloremque id sint fuga. </p>
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+    </div>
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>Web Development</span><br>Web app Development</li>
+            <li><span>App Development</span><br>Building Android Apps</li>
+            <li><span>Penetration Testing</span><br>Ethical Hacking</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="experience">      
+        <ul><li><span>2023 - current</span><br>J.P Morgan Chase</li>
+        <li><span>2022 - 2023</span><br>Freelance</li>
+        <li><span>2020 - 2022</span><br>Internship with Compass Institue</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="education">
+        <ul><li><span>2023 - 2024</span><br>Ethical Hacking Cert from Ed2go</li>
+        <li><span>2017 - 2023</span><br>Web Development Cert from Ed2go</li>
+        <li><span>2015 - 2017</span><br>A.A Valencia College</li>
+        </ul>
+    </div>
+    <div><!--Carousel with languages--></div>
+</div>
+    <!--services-->
+    <div id="services">
+        <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Design</h2>
+                <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2> App Design</h2>
+                <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-duotone fa-solid fa-user-secret"></i>
+                <h2> Ethical Hacker</h2>
+                <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        </div>
+    </div>
+   <!--projects: 3 projects brief decription link each to portfolio page
+   <section>
+    <div>
+        <img src="">
+                       <a href="#" <i class="fa-solid fa-up-right-from-square">></a></i>
+
+        </div>
+    <div>
+        <img src="">
+                         <a href="#" <i class="fa-solid fa-up-right-from-square">></a>
+
+        </div>
+    <div>
+        <img src="">
+                        <a href="#" <i class="fa-solid fa-up-right-from-square">></a>
+
+        </div>
+    </section> -->
+    
+     <!--contact me: social media with icon links - icons for social meadi-->
+     <div>
+     <h1>Contact Me</h1>
+     <div>
+        <i class="fa-solid fa-phone">123-456-7890</i>
+        <i class="fa-brands fa-linkedin">regina.russell@linkedin.com</i>
+        <i class="fa-solid fa-envelope">ren_russell17@outlook.com</i>
+    </div>
+    </div>
+    <div>
+     <form 
+     action="https://formspree.io/f/movqwayb"
+     method="POST">
+    <fieldset>
+        <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last Name</label>
+            <input type="text" name="last-name" required>
+
+        <label for="email">Email Address</label>
+            <input type="email" name="email" required>
+
+        <label for="text">Message</label>
+            <textarea placeholder="Send a Message..."></textarea>
+    </fieldset>
+              <button>Submit</button>
+              </form>
+              </div>
+              <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classlist.remove("avtive-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classlist.remove("avtive-tab");
+                }
+                event.currentTarget.classlist.add("active-link");
+                document.getElementById(tabname).classlist.add("active-tab");
+                }
+              </script>
+              <footer>
+            </footer>
+</body>
+</html>
