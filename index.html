@@ -16,20 +16,20 @@
 <div id="header">
     <div class="container">
         <nav>
-            <img src="./images/pfp.png" alt="profile picture" class="logo">
+            <img src="./images/logo3.png" alt="profile picture" class="logo">
             <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#"> My Services</a></li>
                 <li><a href="#"> Portfolio</a></li>
-                <li><a href="#"> Contact Me</a></li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>                
+                <li><a href="#"> Contact Me</a></li> 
+            </ul>     
+            <i class="fas fa-times" onclick="closemenu()"></i>          
             <i class="fas fa-bars" onclick="openmenu()"></i> 
         </nav>
     </div>
 </div>
    <!--about me: brief description of myself and interests - caroselle with languages proficient in-->
-   <section>
+
 <div class="header-text">
     <p> Web Developer</p>
     <h1>Hi, I'm <span>Regina</span> Russell</h1>
@@ -39,9 +39,8 @@
     <p>I am an aspiring Software Engineer...ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem nam placeat amet fuga at minus? Sit nostrum architecto alias minima, obcaecati cum exercitationem provident suscipit doloremque id sint fuga. </p>
     </div>
     </div>
-    </section>
 
-    <section>
+        <div>
     <div class="tab-titles">
         <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -61,20 +60,18 @@
         </ul>
     </div>
     <div class="tab-contents" id="education">
-        <ul><li><span>2023 - 2024</span><br>Ethical Hacking Cert from Ed2go</li>
-        <li><span>2017 - 2023</span><br>Web Development Cert from Ed2go</li>
-        <li><span>2015 - 2017</span><br>A.A Valencia College</li>
+        <ul><li><span>2023 - 2024</span><br>Ethical Hacking Certification from Ed2go</li>
+        <li><span>2017 - 2023</span><br>Web Development Certtification from Ed2go</li>
+        <li><span>2015 - 2017</span><br>A.A from Valencia College</li>
         </ul>
     </div>
     <!-- <div>Carousel with languages</div> -->
 </div>
-</section>
     <!--services-->
-    <section>
+
     <div id="services">
         <div class="container">
         <h1 class="sub-title">My Services</h1>
-        <div class="services">
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2> Web Design</h2>
@@ -95,8 +92,7 @@
             </div>
         </div>
         </div>
-    </div>
-    </section>
+
    <!--projects: 3 projects brief decription link each to portfolio page
    <section>
     <div>
@@ -120,7 +116,7 @@
 
     
      <!--contact me: social media with icon links - icons for social meadi-->
-    <section>
+
      <div>
      <h1>Contact Me</h1>
      <div>
@@ -134,22 +130,22 @@
      action="https://formspree.io/f/movqwayb"
      method="POST">
     <fieldset>
-        <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" required>
+        <label for="fname"></label>
+            <input type="text" id="fname" name="fname" required placeholder="First Name">
 
-        <label for="lname">Last Name</label>
-            <input type="text" name="last-name" required>
+        <label for="lname"></label>
+            <input type="text" id="lname" name="last-name" required placeholder="Last Name">
 
-        <label for="email">Email Address</label>
-            <input type="email" name="email" required>
+        <label for="email"></label>
+            <input type="email" id="email" name="email" required placeholder="enter@email.com">
 
-        <label for="text">Message</label>
-            <textarea placeholder="Send a Message..."></textarea>
+        <label for="text"></label>
+            <textarea id="text"  name="text" rows="4" cols="50" placeholder="Send a Message..."></textarea>
     </fieldset>
               <button>Submit</button>
               </form>
               </div>
-              </section>
+
               <script>
                 var tablinks = document.getElementsByClassName("tab-links");
                 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -175,15 +171,6 @@
                     sidemenu.style.right = "-200px";
                  }
               </script>
-              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-              integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C OGpamoFVy38MVBnE IbbVYUew OrCXaRkfj" 
-              crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-              integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU 6BZp6G7niu735Sk7lN" 
-              crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-              integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV rV" 
-              crossorigin="anonymous"></script>
               <footer>
             </footer>
 </body>

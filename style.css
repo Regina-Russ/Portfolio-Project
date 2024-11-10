@@ -1,30 +1,34 @@
-/*--nav bar--*/
+/*------------nav bar-------------*/
 
 *{
     margin:0;
     padding:0;
-    font-family: 'poppinns', sans-serif;
+    font-family: 'poppinns', sans-serif ;
     box-sizing: border-box;
 }
 body{
-    background: black;
+    background: #080808;
     color: #fff;
 }
-section{
-    padding: 1px;
-    background: black;
-    color: #fff;
-}
+
 div{
-    background: black;
+    background: #080808;
     color: #fff;
+    padding: 10px;
 }
 #header{
     width: 100%;
-    height: 100 vh;
+    height: 100vh;
+    /* background-image: url(images/pfp_mobile.png);
+    background-size: cover;
+    background-position: center; */
+}
+.container{
+    padding: 10px 10px;
 }
 .logo{
     width: 45px;
+    border-radius: 25%;
 }
 nav{
     display: flex;
@@ -41,7 +45,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #caae0c;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -50,7 +54,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #bd10e8;
+    background: #032977;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -67,14 +71,15 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 .header-text h1 span{
-    color:#bd10e8;
+    color:#caae0c;
     font-size: 50px;
     }
 
-/* -----------css for small screen----- */
+    /* -----------css for small screen-------- */
 nav .fas{
     display: none;
 }
+
 
 @media only screen and (max-width: 600px){
     .header-text{
@@ -86,14 +91,15 @@ nav .fas{
         font-size: 25px;
     }
 nav ul{
-    background-color: #bd10e8;
+    background-color: #caae0c;
     position:fixed;
     top: 0;
     right: -200px;
     width: 200px;
-    height: 45vh;
+    height: 100vh;
     padding-top: 5px;
     z-index: 2;
+    transition: right 0.5s;
 }
  nav ul li{
     display: block;
@@ -105,4 +111,10 @@ nav ul{
     right: 25px;
  }
 
+ nav ul li a{
+    color: #032977;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
 }
