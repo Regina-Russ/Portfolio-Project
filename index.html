@@ -12,26 +12,36 @@
     <!--loading animation- diagonally cascading cubes-->
 
    <!--add nav bar: add logo/pic- link to internal pages for about me, and contact me- link to external page portfolio - code burger menu for smaller displays-->
+
 <div id="header">
     <div class="container">
         <nav>
             <img src="./images/pfp.png" alt="profile picture" class="logo">
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#"> Portfolio</a></li>
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
                 <li><a href="#"> My Services</a></li>
+                <li><a href="#"> Portfolio</a></li>
                 <li><a href="#"> Contact Me</a></li>
-            </ul>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>                
+            <i class="fas fa-bars" onclick="openmenu()"></i> 
         </nav>
     </div>
 </div>
    <!--about me: brief description of myself and interests - caroselle with languages proficient in-->
-<div>
-    <h1 class="sub-title">About Me</h1>
-    <h2>
-        Hello my name is <br> Regina Russell
-    </h2>
+   <section>
+<div class="header-text">
+    <p> Web Developer</p>
+    <h1>Hi, I'm <span>Regina</span> Russell</h1>
+    </div>
+    <div id="about">
+        <div class="container">
     <p>I am an aspiring Software Engineer...ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem nam placeat amet fuga at minus? Sit nostrum architecto alias minima, obcaecati cum exercitationem provident suscipit doloremque id sint fuga. </p>
+    </div>
+    </div>
+    </section>
+
+    <section>
     <div class="tab-titles">
         <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -56,9 +66,11 @@
         <li><span>2015 - 2017</span><br>A.A Valencia College</li>
         </ul>
     </div>
-    <div><!--Carousel with languages--></div>
+    <!-- <div>Carousel with languages</div> -->
 </div>
+</section>
     <!--services-->
+    <section>
     <div id="services">
         <div class="container">
         <h1 class="sub-title">My Services</h1>
@@ -84,21 +96,22 @@
         </div>
         </div>
     </div>
+    </section>
    <!--projects: 3 projects brief decription link each to portfolio page
    <section>
     <div>
         <img src="">
-                       <a href="#" <i class="fa-solid fa-up-right-from-square">></a></i>
+         <a href="#" <i class="fa-solid fa-up-right-from-square">></a></i>
 
         </div>
     <div>
         <img src="">
-                         <a href="#" <i class="fa-solid fa-up-right-from-square">></a>
+             <a href="#" <i class="fa-solid fa-up-right-from-square">></a>
 
         </div>
     <div>
         <img src="">
-                        <a href="#" <i class="fa-solid fa-up-right-from-square">></a>
+            <a href="#" <i class="fa-solid fa-up-right-from-square">></a>
 
         </div>
     </section> -->
@@ -107,7 +120,7 @@
 
     
      <!--contact me: social media with icon links - icons for social meadi-->
-
+    <section>
      <div>
      <h1>Contact Me</h1>
      <div>
@@ -136,6 +149,7 @@
               <button>Submit</button>
               </form>
               </div>
+              </section>
               <script>
                 var tablinks = document.getElementsByClassName("tab-links");
                 var tabcontents = document.getElementsByClassName("tab-contents");
@@ -150,6 +164,16 @@
                 event.currentTarget.classlist.add("active-link");
                 document.getElementById(tabname).classlist.add("active-tab");
                 }
+              </script>
+              <script>
+                var sidemenu = document.getElementById("sidemenu");
+
+                 function openmenu(){
+                    sidemenu.style.right = "0";
+                 }
+                 function closemenu(){
+                    sidemenu.style.right = "-200px";
+                 }
               </script>
               <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
               integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C OGpamoFVy38MVBnE IbbVYUew OrCXaRkfj" 
