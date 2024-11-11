@@ -22,8 +22,8 @@
                 <li><a href="#"> My Services</a></li>
                 <li><a href="#"> Portfolio</a></li>
                 <li><a href="#"> Contact Me</a></li> 
-            </ul>     
-            <i class="fas fa-times" onclick="closemenu()"></i>          
+                <i class="fas fa-times" onclick="closemenu()"></i> 
+            </ul>              
             <i class="fas fa-bars" onclick="openmenu()"></i> 
         </nav>
     </div>
@@ -113,16 +113,58 @@
     </section> -->
 
       <!--user stories - carosel-->
+<div id="userstoriesCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <!-- ---------first story---------->
+         <div class="carousel-item-active">
+            <dic class="carousel content">
+            <h5> User Story 1</h5>
+            <p> "Regina created a personal wwbpage for me that showcasess my portfolio beautifilly. Their attention to detail and creativity exceeded my expectations!"</p>
+            <small>- Nancy A</small>
+            </dic>
+            </div>
+        <!-- -------------Second Story----------- -->
+         <div class="carousel-item">
+            <h5> User Story 2</h5>
+            <p> "Regina's freelance work on my e-commerce site was phwnomenal! They optimized everything for a smooth user experience ans modern design."</p>
+            <small>- Sammantha B.</small>
+         </div>
+         <div class="carousel-item">
+            <h5> User Story 3</h5>
+            <p> "I hired Regina to redesign my business website, and it now attracts more customers than ever. Highly recommened their services!"</p>
+            <small>- Catherine P.</small>
+         </div>
+</div>
+</div>
 
-    
+<!-- Carousel controls -->
+
+<a class="carousel-control-prev" href="#userStoriesCarousel" role="button" data-slide="prev">
+
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+    <span class="sr-only">Previous</span>
+
+</a>
+
+<a class="carousel-control-next" href="#userStoriesCarousel" role="button" data-slide="next">
+
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    <span class="sr-only">Next</span>
+
+</a>
+
+</div>    
      <!--contact me: social media with icon links - icons for social meadi-->
 
-     <div>
+     <div id="contact">
      <h1>Contact Me</h1>
      <div>
-        <i class="fa-solid fa-phone">123-456-7890</i>
-        <i class="fa-brands fa-linkedin">regina.russell@linkedin.com</i>
-        <i class="fa-solid fa-envelope">ren_russell17@outlook.com</i>
+       <ul>
+        <li><i class="fa-solid fa-phone"></i> 123-456-7890</li>
+        <li><i class="fa-brands fa-linkedin"></i> regina.russell@linkedin.com</li>
+        <li><i class="fa-solid fa-envelope"></i> ren_russell17@outlook.com</li>
     </div>
     </div>
     <div>
@@ -171,6 +213,10 @@
                     sidemenu.style.right = "-200px";
                  }
               </script>
+
+              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
               <footer>
             </footer>
 </body>
