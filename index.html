@@ -56,7 +56,7 @@
     <div class="tab-contents" id="experience">      
         <ul><li><span>2023 - current</span><br>J.P Morgan Chase</li>
         <li><span>2022 - 2023</span><br>Freelance</li>
-        <li><span>2020 - 2022</span><br>Internship with Compass Institue</li>
+        <li><span>2020 - 2022</span><br>Internship with Compass Institute</li>
         </ul>
     </div>
     <div class="tab-contents" id="education">
@@ -69,29 +69,51 @@
 </div>
     <!--services-->
 
-    <div id="services">
-        <div class="container">
+    <section id="services" class="services">
+
+        <div class="services-grid">
+        
         <h1 class="sub-title">My Services</h1>
-            <div>
+
+            <div class="services-item">
+
                 <i class="fa-solid fa-code"></i>
+
                 <h2> Web Design</h2>
+
                 <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
+
                 <a href="#">Learn More</a>
+
             </div>
-            <div>
+
+            <div class="services-item">
+
                 <i class="fa-brands fa-app-store"></i>
+
                 <h2> App Design</h2>
+
                 <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
+
                 <a href="#">Learn More</a>
+
             </div>
-            <div>
+
+            <div class="services-item">
+
                 <i class="fa-duotone fa-solid fa-user-secret"></i>
+
                 <h2> Ethical Hacker</h2>
+
                 <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
+
                 <a href="#">Learn More</a>
+
             </div>
+
         </div>
-        </div>
+
+    </section>
 
    <!--projects: 3 projects brief decription link each to portfolio page
    <section>
@@ -113,7 +135,7 @@
     </section> -->
 
       <!--user stories - carosel-->
-<div id="userstoriesCarousel" class="carousel slide" data-ride="carousel">
+<section id="userstoriesCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <!-- ---------first story---------->
          <div class="carousel-item-active">
@@ -153,28 +175,30 @@
     <span class="sr-only">Next</span>
 
 </a>
+</div>
 
-</div>    
+</section>    
      <!--contact me: social media with icon links - icons for social meadi-->
 
-     <div id="contact">
-     <h1>Contact Me</h1>
-     <div>
+     <section id="contact" class="contact">
+
+     <h3>Contact Me</h3>
+
+     <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+
+    
        <ul>
         <li><i class="fa-solid fa-phone"></i> 123-456-7890</li>
         <li><i class="fa-brands fa-linkedin"></i> regina.russell@linkedin.com</li>
         <li><i class="fa-solid fa-envelope"></i> ren_russell17@outlook.com</li>
-    </div>
-    </div>
-    <div>
+        </ul>
+
      <form 
-     action="https://formspree.io/f/movqwayb"
-     method="POST">
-    <fieldset>
-        <label for="fname"></label>
+        action="https://formspree.io/f/movqwayb"
+        method="POST">
+
             <input type="text" id="fname" name="fname" required placeholder="First Name">
 
-        <label for="lname"></label>
             <input type="text" id="lname" name="last-name" required placeholder="Last Name">
 
         <label for="email"></label>
@@ -182,10 +206,9 @@
 
         <label for="text"></label>
             <textarea id="text"  name="text" rows="4" cols="50" placeholder="Send a Message..."></textarea>
-    </fieldset>
-              <button>Submit</button>
+            <button>Submit</button>
               </form>
-              </div>
+            </section>
 
               <script>
                 var tablinks = document.getElementsByClassName("tab-links");

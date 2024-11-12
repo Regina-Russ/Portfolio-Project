@@ -19,13 +19,11 @@ div{
 #header{
     width: 100%;
     height: 50vh;
-    background-image: url(images/pfp_mobile.png);
+    /* background-image: url(images/pfp_mobile.png);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
-.container{
-    padding: 10px 10px;
-}
+
 .logo{
     width: 45px;
     border-radius: 25%;
@@ -49,30 +47,120 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
+
 nav ul li a::after{
+
     content: '';
+
     width: 0;
+    
     height: 3px;
+    
     background: #032977;
+    
     position: absolute;
+    
     left: 0;
+    
     bottom: -6px;
+    
     transition: 0.5s;
+
 }
+
 nav ul li a:hover::after{
+
     width: 100%;
+
 }
+
 .header-text{
+
     font-size:30px;
+
     height:50vh;
+    
 }
+
 .header-text h1{
+
     font-size: 30px;
+
 }
+
 .header-text h1 span{
+
     color:#caae0c;
+
     font-size: 50px;
+
     }
+
+    /* ------------experience---------- */
+
+    div ul li span{
+
+        color:#caae0c;
+    }
+
+    #tab-titles p {
+
+        color:#caae0c;
+    }
+
+    /*-----------Portfolio Section-------*/
+
+.services {
+
+    text-align: center;
+
+}
+
+
+
+.services h1 {
+
+    font-size: 2rem;
+
+    color: #FFD700;
+
+    margin-bottom: 20px;
+
+}
+
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 20px;
+
+}
+
+div a{
+    color:#caae0c;
+}
+div a:hover{
+    color:#032977;
+}
+
+
+
+.services-item {
+
+    background-color: #FFD700;
+
+    color: #0A2540;
+
+    padding: 40px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+}
 
     /* -----------about---------- */
     #about {
@@ -82,28 +170,27 @@ nav ul li a:hover::after{
         list-style: none;
         justify-content:space-between;
     }
-    /* -----------Services---------- */
-    .services {
-        height: 50vh;
-    }
-    div a{
-        color:#caae0c;
-    }
-    div a:hover{
-        color:#032977;
-    }
-    div ul li span{
-        color:#032977;
-    }
+    
 
     /* -------------user stories----------- */
+
+
     .carousel-content {
+
         display: flex;
-        flex-direction: colomn;
+
+        flex-direction: column;
+
+        align-items: center;
+
         justify-content: center;
+
         height: 300px;
+
         text-align: center;
+
         padding: 20px;
+
     }
 
     .carousel-content h5 {
@@ -123,12 +210,102 @@ nav ul li a:hover::after{
     
     /* -----------contact me--------- */
 
-    .contact {
-        height: 100vh;
-    }
-    button{
-        position: center;
-    }
+
+.contact {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+}
+
+
+
+.contact h3 {
+
+    font-size: 2rem;
+
+    color: #FFD700;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.contact form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+
+    max-width: 400px;
+
+    margin: auto;
+
+}
+
+
+
+.contact input, .contact textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 2px solid #FFD700;
+
+    border-radius: 5px;
+
+    background: #102D5B;
+
+    color: #fff;
+
+}
+
+
+
+.contact button {
+
+    padding: 10px 20px;
+
+    border: none;
+
+    background-color: #FFD700;
+
+    color: #0A2540;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+.contact ul li {
+
+    list-style: none;
+}
+
+/* Footer */
+
+.footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    background-color: #0A2540;
+
+    color: #FFD700;
+
+}
+
     /* -----------css for small screen-------- */
 nav .fas{
     display: none;
