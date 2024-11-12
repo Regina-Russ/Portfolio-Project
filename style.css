@@ -108,7 +108,7 @@ nav ul li a:hover::after{
         color:#caae0c;
     }
 
-    /*-----------Portfolio Section-------*/
+    /*-----------Services Section-------*/
 
 .services {
 
@@ -208,6 +208,11 @@ div a:hover{
         color:#888;
     }
     
+    section h2 {
+
+        text-align: center;
+
+    }
     /* -----------contact me--------- */
 
 
