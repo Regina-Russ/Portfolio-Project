@@ -150,7 +150,7 @@ div a:hover{
 
 .services-item {
 
-    background-color: #FFD700;
+    background-color: #caae0c;
 
     color: #0A2540;
 
@@ -168,6 +168,7 @@ div a:hover{
     }
     div  ul li{
         list-style: none;
+
         justify-content:space-between;
     }
     
@@ -194,12 +195,16 @@ div a:hover{
     }
 
     .carousel-content h5 {
+
         font-size: 1.1rem;
+
         color:#555;
     }
 
     .carousel-content p {
+
         font-size: 1.1rem;
+
         color:#555;
     }
 
@@ -208,10 +213,58 @@ div a:hover{
         color:#888;
     }
     
-    section h2 {
+    .carousel-container h2 {
+
+        color:#caae0c;
 
         text-align: center;
 
+    }
+
+    .carousel-item-active, .carousel-item {
+
+        width: 400px;
+
+        padding: 10px 10px;
+
+        background-color:#caae0c;
+
+        border-radius: 8px;
+
+        justify-content: center;
+
+        color:#0A2540;
+
+        font-style: bold;
+
+        
+    }
+
+    .button {
+
+        display: flex;
+
+        justify-content:space-between;
+
+        padding: 10px;
+
+    }
+
+    .buttons button {
+
+        border: none;
+
+        color:#032977;
+
+        background-color: #080808;
+
+        font-size:xx-large;
+
+    }
+
+    .buttons button:hover {
+
+        color:#fff;
     }
     /* -----------contact me--------- */
 
@@ -303,9 +356,9 @@ div a:hover{
 
     text-align: center;
 
-    padding: 20px;
+    padding: 20px ;
 
-    background-color: #0A2540;
+    background-color: #102D5B;
 
     color: #FFD700;
 
