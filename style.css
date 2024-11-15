@@ -36,16 +36,25 @@ nav{
 }
 nav ul li{
     display: inline-block;
+
     list-style: none;
+
     margin: 10px 20px;
+
     padding-top:20px;
+
 }
 
 nav ul li a{
+
     color: #caae0c;
+
     text-decoration: none;
+
     font-size: 18px;
+
     position: relative;
+
 }
 
 nav ul li a::after{
@@ -96,6 +105,27 @@ nav ul li a:hover::after{
 
     }
 
+    /* -----------about---------- */
+    /* #about {
+
+        position:relative;
+
+    } */
+    div  ul li{
+        list-style: none;
+
+        justify-content:space-between;
+
+        text-align:center;
+    }
+
+    /* div #container p {
+        float: left;
+    } */
+
+    
+    
+
     /* ------------experience---------- */
 
     div ul li span{
@@ -103,10 +133,19 @@ nav ul li a:hover::after{
         color:#caae0c;
     }
 
-    #tab-titles p {
+    .tab-titles p {
 
         color:#caae0c;
+
+        display: inline-block;
+
+        padding: 20px;
+
+        text-align: center;
     }
+
+    
+
 
     /*-----------Services Section-------*/
 
@@ -162,21 +201,10 @@ div a:hover{
 
 }
 
-    /* -----------about---------- */
-    #about {
-        height: 50vh;
-    }
-    div  ul li{
-        list-style: none;
-
-        justify-content:space-between;
-    }
-    
 
     /* -------------user stories----------- */
 
-
-    .carousel-content {
+    .carousel-item {
 
         display: flex;
 
@@ -186,44 +214,37 @@ div a:hover{
 
         justify-content: center;
 
-        height: 300px;
+        height: 150;
 
         text-align: center;
 
         padding: 20px;
 
+        margin-right: 0;
+
+        float: none;
+
     }
 
-    .carousel-content h5 {
+    .carousel-item p {
 
         font-size: 1.1rem;
 
-        color:#555;
+        color:#0A2540;
+        
     }
 
-    .carousel-content p {
-
-        font-size: 1.1rem;
-
-        color:#555;
-    }
-
-    .carousel-content small {
+    .carousel-item small {
         font-size: 0.9rem;
-        color:#888;
+
+        color: #102D5B;
+
+        font-weight: bold;
     }
     
-    .carousel-container h2 {
-
-        color:#caae0c;
-
-        text-align: center;
-
-    }
+    
 
     .carousel-item-active, .carousel-item {
-
-        width: 400px;
 
         padding: 10px 10px;
 
@@ -237,7 +258,7 @@ div a:hover{
 
         font-style: bold;
 
-        
+
     }
 
     .button {
@@ -258,14 +279,40 @@ div a:hover{
 
         background-color: #080808;
 
-        font-size:xx-large;
-
     }
 
     .buttons button:hover {
 
         color:#fff;
     }
+
+    .carousel.slide {
+
+        display:flex;
+
+        width: 100%;
+
+
+        margin: 0;
+
+        padding: 0;
+
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+
+        height: 40px;
+
+        width: 40px;
+    }
+
     /* -----------contact me--------- */
 
 

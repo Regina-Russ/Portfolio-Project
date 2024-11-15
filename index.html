@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Personal Profile Project</title>
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/a917aa3c3d.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <!--loading animation- diagonally cascading cubes-->
 
@@ -31,41 +38,70 @@
    <!--about me: brief description of myself and interests - caroselle with languages proficient in-->
 
 <div class="header-text">
+
     <p> Web Developer</p>
+
     <h1>Hi, I'm <span>Regina</span> Russell</h1>
-    </div>
-    <div id="about">
-        <div class="container">
-    <p>I am an aspiring Software Engineer...ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem nam placeat amet fuga at minus? Sit nostrum architecto alias minima, obcaecati cum exercitationem provident suscipit doloremque id sint fuga. </p>
-    </div>
+
     </div>
 
-        <div>
-    <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
-        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+    <div id="about">
+
+        <div class="container">
+
+    <p>I am an aspiring Software Engineer...ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem nam placeat amet fuga at minus? Sit nostrum architecto alias minima, obcaecati cum exercitationem provident suscipit doloremque id sint fuga. </p>
+
     </div>
+
+        <div id="tabs">
+
+    <div class="tab-titles">
+
+        <p>Skils</p>
+        <p>Experience</p>
+        <p>Education</p>
+
+    </div>
+
     <div class="tab-contents active-tab" id="skills">
+
         <ul>
             <li><span>Web Development</span><br>Web app Development</li>
+
             <li><span>App Development</span><br>Building Android Apps</li>
+
             <li><span>Penetration Testing</span><br>Ethical Hacking</li>
+
         </ul>
+
     </div>
-    <div class="tab-contents" id="experience">      
+    <div class="tab-contents" id="experience">  
+
         <ul><li><span>2023 - current</span><br>J.P Morgan Chase</li>
+
         <li><span>2022 - 2023</span><br>Freelance</li>
+
         <li><span>2020 - 2022</span><br>Internship with Compass Institute</li>
+
         </ul>
+
     </div>
+
     <div class="tab-contents" id="education">
+
         <ul><li><span>2023 - 2024</span><br>Ethical Hacking Certification from Ed2go</li>
+
         <li><span>2017 - 2023</span><br>Web Development Certtification from Ed2go</li>
+
         <li><span>2015 - 2017</span><br>A.A from Valencia College</li>
+
         </ul>
+
     </div>
-    <!-- <div>Carousel with languages</div> -->
+
+    <!-- Carousel with languages -->
+</div>
 </div>
     <!--services-->
 
@@ -96,7 +132,7 @@
                 <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
 
                 <a href="#">Learn More</a>
-
+                
             </div>
 
             <div class="services-item">
@@ -137,43 +173,48 @@
       <!--user stories - carosel-->
 
 
-    <div class="carousel-container">
+      <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7500">
 
-        <h2> User Stories</h2>
+        <div class="carousel-inner">
+            <!-- ---------first story---------->
+             <div class="carousel-item active"  id="story1">
+                        
+                <p class="d-block w-100"> "Regina created a personal webpage for me that showcasess my portfolio beautifilly. Their attention to detail and creativity exceeded my expectations!"</p>
+                <small>- Nancy A.</small>
+      
+                </div>
+            <!-- -------------Second Story----------- -->
+             <div class="carousel-item" id="story2">
+                
+                <p class="d-block w-100"> "Regina's freelance work on my e-commerce site was phenomenal! They optimized everything for a smooth user experience and modern design."</p>
+                <small>- Sammantha B.</small>
+             </div>
+      
+             <!----------------Third Story----------->
+             <div class="carousel-item" id="story3">
+                
+                <p class="d-block w-100"> "I hired Regina to redesign my business website, and it now attracts more customers than ever. Highly recommened their services!"</p>
+                <small>- Catherine P.</small>
+             </div>
+        </div>
 
-        <div class="buttons">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
 
-            <button onclick="prevStory()"><i class="fa-solid fa-chevron-left"></i></button>
+            <span class="carousel-control-prev-icon" aria-hidden="true" hidden></span>
 
-        <!-- ---------first story---------->
-         <div class="carousel-item-active" id="story1">
-                    
-            <p> "Regina created a personal wwbpage for me that showcasess my portfolio beautifilly. Their attention to detail and creativity exceeded my expectations!"</p>
-            <small>- Nancy A</small>
+            <span class="visually-hidden">Previous</span>
 
-            </div>
-        <!-- -------------Second Story----------- -->
-         <div class="carousel-item" id="story2">
-            
-            <p> "Regina's freelance work on my e-commerce site was phwnomenal! They optimized everything for a smooth user experience ans modern design."</p>
-            <small>- Sammantha B.</small>
-         </div>
+        </button>
 
-         <!----------------Third Story----------->
-         <div class="carousel-item" id="story3">
-            
-            <p> "I hired Regina to redesign my business website, and it now attracts more customers than ever. Highly recommened their services!"</p>
-            <small>- Catherine P.</small>
-         </div>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
 
-<!-- Carousel controls -->
+            <span class="carousel-control-next-icon" aria-hidden="true" hidden></span>
 
+            <span class="visually-hidden">Next</span>
 
-    <button onclick="nextStory()"><i class="fa-solid fa-chevron-right"></i></button>
+        </button>
 
-</div>
-
-</div>
+    </div>
    
      <!--contact me: social media with icon links - icons for social meadi-->
 
@@ -194,56 +235,18 @@
         action="https://formspree.io/f/movqwayb"
         method="POST">
 
-            <input type="text" id="fname" name="fname" required placeholder="First Name">
+            <input type="text" id="fname" name="fname" required placeholder="First Name" autocomplete="first-name">
 
-            <input type="text" id="lname" name="last-name" required placeholder="Last Name">
+            <input type="text" id="lname" name="last-name" required placeholder="Last Name" autocomplete="last-name">
 
-        <label for="email"></label>
-            <input type="email" id="email" name="email" required placeholder="enter@email.com">
+                   <input type="email" id="email" name="email" required placeholder="enter@email.com" autocomplete="email">
 
-        <label for="text"></label>
             <textarea id="text"  name="text" rows="4" cols="50" placeholder="Send a Message..."></textarea>
+
             <button>Submit</button>
               </form>
             </section>
 
-            <script>
-
-                let currentStory = 0;
-
-                const stories = document.querySelectorAll('.story');
-                function showStory(index) { 
-                    stories.forEach ((story, i) => {story.classList.toggle('active', i === index);});
-            }
-            
-             function nextStory() {
-                currentStory = (currentStory + 1) % stories.length;
-                showStory(currentStory);
-
-             }
-
-             function prevStory() {
-                currentStory = (currentStory - 1 + stories.length) % stories.length;
-                showStory(currentStory);
-             }
-
-            </script>
-
-              <!-- <script>
-                var tablinks = document.getElementsByClassName("tab-links");
-                var tabcontents = document.getElementsByClassName("tab-contents");
-
-                function opentab(tabname){
-                    for(tablink of tablinks){
-                        tablink.classlist.remove("avtive-link");
-                    }
-                    for(tabcontent of tabcontents){
-                        tabcontent.classlist.remove("avtive-tab");
-                }
-                event.currentTarget.classlist.add("active-link");
-                document.getElementById(tabname).classlist.add("active-tab");
-                }
-              </script> -->
               <script>
                 var sidemenu = document.getElementById("sidemenu");
 
@@ -253,12 +256,10 @@
                  function closemenu(){
                     sidemenu.style.right = "-200px";
                  }
-              </script>
+                 </script>
 
-              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-              
               <footer class="footer">
 
                 <p>&copy; 2024 My Portfolio. All rights reserved.</p>
