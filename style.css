@@ -419,8 +419,6 @@ section {
 
         justify-content: center;
 
-        height: 150;
-
         text-align: center;
 
         padding: 20px;
@@ -468,8 +466,6 @@ section {
         justify-content: center;
 
         color:#0A2540;
-
-        font-style: bold;
 
 
     }
@@ -530,7 +526,7 @@ section {
 
 
 
-.contact h1 {
+.contact h2 {
 
 
     color: #FFD700;
@@ -632,9 +628,29 @@ nav .fas{
     .header-text{
         font-size: 30px;
     }
+
+    nav i{
+
+        position:relative;
+    }
     nav .fas{
         display: block;
+
         font-size: 25px;
+
+        
+    }
+    nav .fas.fa-times{
+        position: absolute;
+
+        top:15px;
+
+        left: 445px;
+
+        z-index: 4;
+
+        color:#080808;
+
     }
 nav ul{
     background-color: #caae0c;
