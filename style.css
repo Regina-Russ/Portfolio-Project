@@ -140,6 +140,7 @@ div a:hover{
     }
 
     /* -----------about---------- */
+
     #about {
 
         position:relative;
@@ -166,7 +167,7 @@ div a:hover{
 
     .about-col-2 {
 
-        flex-basis: 5%;
+        flex-basis: 50%;
     }
 
     .sub-title {
