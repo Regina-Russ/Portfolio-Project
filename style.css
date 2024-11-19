@@ -280,6 +280,7 @@ div a:hover{
 
     height: auto;
 
+
 }
 section {
 
@@ -478,6 +479,8 @@ section {
 
         padding: 10px;
 
+        position: relative;
+
     }
 
     .buttons button {
@@ -488,6 +491,13 @@ section {
 
         background-color: #080808;
 
+        position: absolute;
+
+        /* top: .5px;
+
+        right: 50px; */
+
+
     }
 
     .buttons button:hover {
@@ -496,10 +506,12 @@ section {
     }
 
     .carousel-control-prev, .carousel-control-next {
+
         position: absolute;
+
         top: 50%;
-        transform: translateY(-50%);
-        z-index: 5;
+
+        z-index: 1;
     }
 
     .carousel-control-prev-icon, .carousel-control-next-icon {
@@ -641,18 +653,23 @@ nav .fas{
         
     }
     nav .fas.fa-times{
-        position: absolute;
 
-        top:15px;
+        position: fixed;
 
-        left: 445px;
+        top: 15px;
+
+        right: 450px;
 
         z-index: 4;
 
         color:#080808;
 
+        transition: right 0.5s;
+
     }
-nav ul{
+
+    
+nav ul {
     background-color: #caae0c;
     position:fixed;
     top: 0;
