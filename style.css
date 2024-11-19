@@ -5,10 +5,15 @@
     padding:0;
     font-family: 'poppinns', sans-serif ;
     box-sizing: border-box;
+
 }
 body{
     background: #080808;
+
     color: #fff;
+
+    max-width: 100%;
+   
 }
 
 div{
@@ -17,10 +22,18 @@ div{
     padding: 10px;
 }
 
+div.container {
+
+    margin: 0;
+
+    padding-left: 50px;
+
+}
 
 .logo{
     width: 45px;
-    border-radius: 25%;
+
+    border-radius: 8px;
 }
 
 
@@ -29,6 +42,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 
@@ -130,7 +144,8 @@ div a:hover{
 
         position:relative;
 
-        height: 100vh;
+        height: auto;
+
 
     }
 
@@ -151,7 +166,7 @@ div a:hover{
 
     .about-col-2 {
 
-        flex-basis: 50%;
+        flex-basis: 5%;
     }
 
     .sub-title {
@@ -197,6 +212,8 @@ div a:hover{
         display: none;
 
         padding-left: 22px;
+
+        padding-right: 6%;
     }
 
     .tab-contents.active-tab {
@@ -260,12 +277,14 @@ div a:hover{
 
 .services {
 
-    display:flex;
-
-    height: 100vh;
+    height: auto;
 }
+section {
+
+    background-color: #080808;
 
 
+}
 
 .sub-title h1 {
 
@@ -275,9 +294,10 @@ div a:hover{
 
         color:#ffff;
 
-        height: 30vh;
+        padding-left: 6%;
 
-    padding-top: 10%;
+        padding-top: 10%;
+
 }
 
 
@@ -285,17 +305,18 @@ div a:hover{
 
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     gap: 20px;
 
-    height: 70vh;
+    padding: 65px;
 
+    box-sizing: border-box;
 }
 
 
 
-.services-item {
+.services-item, .services-item1, .services-item2 {
 
     background-color: #caae0c;
 
@@ -307,19 +328,61 @@ div a:hover{
 
     font-weight: bold;
 
-    max-height: 450px;
+    height: auto;
+
+    width: 100%;
+
+    max-width: 400px;
+
+    margin: 0 auto;
+
+
 
 }
 
 .services-item a {
 
     color: #555;
+
+}
+
+.services-item1 a {
+
+    color: #555;
+
+}
+.services-item2 a {
+
+    color: #555;
+}
+
+.services-item i, .services-item1 i, .services-item2 i {
+
+    font-size: 60px;
+
+    padding-bottom: 15px;
+
 }
 
 .services-item a:hover {
 
     color: #0A2540;
+
 }
+
+.services-item1 a:hover {
+
+    color: #0A2540;
+
+}
+
+.services-item2 a:hover {
+
+    color: #0A2540;
+
+}
+
+
 
 
     /* -------------user stories----------- */
@@ -328,13 +391,17 @@ div a:hover{
 
         display:flex;
 
-        width: 100%;
+        width: 75%;
 
-        margin: 0;
+        margin: 2em;
 
-        height: 25vh;  
+        height: 50vh;  
 
-        padding-top: 5%;
+        padding-top: 15%;
+
+        padding-left: 20%;
+
+        justify-items:center;
 
         background-color: #fff;
 
@@ -360,6 +427,7 @@ div a:hover{
 
         float: none;
 
+
     }
 
     .carousel-inner {
@@ -377,6 +445,7 @@ div a:hover{
     }
 
     .carousel-item small {
+
         font-size: 0.9rem;
 
         color: #102D5B;
@@ -449,9 +518,11 @@ div a:hover{
 
     text-align: center;
 
-    height: 70vh;  
+    height: 80vh;  
 
-    padding-top: 5%; 
+    padding-top: 2%; 
+
+    background-color: #fff;
 
 }
 
@@ -461,8 +532,6 @@ div a:hover{
 
 
     color: #FFD700;
-
-    margin-bottom: 5%;
 
     font-size: 60px;
 
@@ -484,7 +553,7 @@ div a:hover{
 
     margin: auto;
     
-    padding-top: 5%;
+    padding-top: 6%;
 
 }
 
@@ -528,7 +597,12 @@ div a:hover{
 
 .contact ul li {
 
+    padding-top: 20px;
+
     list-style: none;
+
+    line-height: 1.5;
+
 }
 
 /*-------------Footer -----------------*/
@@ -552,6 +626,7 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px){
+
     .header-text{
         font-size: 30px;
     }
@@ -618,10 +693,15 @@ nav ul{
 
 .sub-title  {
 
-    margin-top: 10%;
 
     padding-bottom:10%;
 
 }
 
+.services {
+
+    height:auto;
+
+    margin:0;
+}
 }
