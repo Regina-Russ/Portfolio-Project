@@ -29,9 +29,13 @@
                 <li><a href="#services"> My Services</a></li>
                 <li><a href="index2.html"> Portfolio</a></li>
                 <li><a href="#contact"> Contact Me</a></li> 
-                <i class="fas fa-times" onclick="closemenu()"></i> 
-            </ul>              
+                <!-- <i class="fas fa-times" onclick="closemenu()"></i>  -->
+            </ul> 
+
+            <i class="fas fa-times" onclick="closemenu()" ></i> 
+                         
             <i class="fas fa-bars" onclick="openmenu()"></i> 
+
         </nav>
 
         <div class="header-text">
@@ -118,7 +122,7 @@
     </div>
 
     <!-- Carousel with languages -->
-</div>
+
     <!--services-->
 
     <div id="services" class="sub-title">
@@ -196,21 +200,21 @@
       <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7500">
 
         <div class="carousel-inner">
-            <!-- ---------first story---------->
+            <!--first story-->
              <div class="carousel-item active"  id="story1">
                         
                 <p class="d-block w-100"> "Regina created a personal webpage for me that showcasess my portfolio beautifilly. Their attention to detail and creativity exceeded my expectations!"</p>
                 <small>- Nancy A.</small>
       
                 </div>
-            <!-- -------------Second Story----------- -->
+            <!--Second Story-->
              <div class="carousel-item" id="story2">
                 
                 <p class="d-block w-100"> "Regina's freelance work on my e-commerce site was phenomenal! They optimized everything for a smooth user experience and modern design."</p>
                 <small>- Sammantha B.</small>
              </div>
       
-             <!----------------Third Story----------->
+             <!--Third Story-->
              <div class="carousel-item" id="story3">
                 
                 <p class="d-block w-100"> "I hired Regina to redesign my business website, and it now attracts more customers than ever. Highly recommened their services!"</p>
@@ -241,7 +245,7 @@
 
      <section id="contact" class="contact">
 
-     <h1>Contact Me</h1>
+     <h2>Contact Me</h2>
 
      <p>Feel free to reach out for collaborations or just a friendly hello!</p>
 
@@ -256,9 +260,9 @@
         action="https://formspree.io/f/movqwayb"
         method="POST">
 
-            <input type="text" id="fname" name="fname" required placeholder="First Name" autocomplete="first-name">
+            <input type="text" id="fname" name="fname" required placeholder="First Name">
 
-            <input type="text" id="lname" name="last-name" required placeholder="Last Name" autocomplete="last-name">
+            <input type="text" id="lname" name="last-name" required placeholder="Last Name">
 
                    <input type="email" id="email" name="email" required placeholder="enter@email.com" autocomplete="email">
 
