@@ -25,42 +25,49 @@
         <nav>
             <img src="./images/logo3.png" alt="profile picture" class="logo">
             <ul id="sidemenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#"> My Services</a></li>
-                <li><a href="#"> Portfolio</a></li>
-                <li><a href="#"> Contact Me</a></li> 
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services"> My Services</a></li>
+                <li><a href="_self"> Portfolio</a></li>
+                <li><a href="#contact"> Contact Me</a></li> 
                 <i class="fas fa-times" onclick="closemenu()"></i> 
             </ul>              
             <i class="fas fa-bars" onclick="openmenu()"></i> 
         </nav>
+
+        <div class="header-text">
+
+            <p> Web Developer</p>
+        
+            <h1>Hi, I'm <span>Regina</span></h1>
+        
+        </div>
     </div>
 </div>
    <!--about me: brief description of myself and interests - caroselle with languages proficient in-->
-
-<div class="header-text">
-
-    <p> Web Developer</p>
-
-    <h1>Hi, I'm <span>Regina</span> Russell</h1>
-
-    </div>
 
 
     <div id="about">
 
         <div class="container">
 
+            <div class="row">
+                
+                <div class="about-col-1">
+
+                    <h1 class="sub-title"> About Me</h1>
+
+
     <p>I am an aspiring Software Engineer...ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem nam placeat amet fuga at minus? Sit nostrum architecto alias minima, obcaecati cum exercitationem provident suscipit doloremque id sint fuga. </p>
 
     </div>
 
-        <div id="tabs">
+                <div class="about-col-2">
 
     <div class="tab-titles">
 
-        <p>Skils</p>
-        <p>Experience</p>
-        <p>Education</p>
+        <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
 
     </div>
 
@@ -71,14 +78,16 @@
 
             <li><span>App Development</span><br>Building Android Apps</li>
 
-            <li><span>Penetration Testing</span><br>Ethical Hacking</li>
+            <li><span>Ethical Hacking</span><br>Penetration Testing</li>
 
         </ul>
 
     </div>
+
     <div class="tab-contents" id="experience">  
 
-        <ul><li><span>2023 - current</span><br>J.P Morgan Chase</li>
+        <ul>
+            <li><span>2023 - current</span><br>J.P Morgan Chase</li>
 
         <li><span>2022 - 2023</span><br>Freelance</li>
 
@@ -100,16 +109,28 @@
 
     </div>
 
+    </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
     <!-- Carousel with languages -->
 </div>
-</div>
     <!--services-->
+
+    <div class="sub-title">
+
+        <h1>My Services</h1>
+
+    </div>
 
     <section id="services" class="services">
 
         <div class="services-grid">
-        
-        <h1 class="sub-title">My Services</h1>
 
             <div class="services-item">
 
@@ -119,7 +140,7 @@
 
                 <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
 
-                <a href="#">Learn More</a>
+                <a href="#contact">Learn More</a>
 
             </div>
 
@@ -131,8 +152,8 @@
 
                 <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
 
-                <a href="#">Learn More</a>
-                
+                <a href="#contact">Learn More</a>
+
             </div>
 
             <div class="services-item">
@@ -143,7 +164,7 @@
 
                 <p>ipsem Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem illo eveniet corrupti dolorem molestiae excepturi modi esse quas asperiores similique sit at, exercitationem quia velit eos harum? Ut, ratione laboriosam.</p>
 
-                <a href="#">Learn More</a>
+                <a href="#contact">Learn More</a>
 
             </div>
 
@@ -215,12 +236,14 @@
         </button>
 
     </div>
+
+    <!---static button that leads back to home-->
    
      <!--contact me: social media with icon links - icons for social meadi-->
 
      <section id="contact" class="contact">
 
-     <h3>Contact Me</h3>
+     <h1>Contact Me</h1>
 
      <p>Feel free to reach out for collaborations or just a friendly hello!</p>
 
@@ -246,6 +269,25 @@
             <button>Submit</button>
               </form>
             </section>
+
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                function opentab(tabname) {
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                
+                }
+
+            </script>
 
               <script>
                 var sidemenu = document.getElementById("sidemenu");
