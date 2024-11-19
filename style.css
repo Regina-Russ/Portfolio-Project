@@ -16,24 +16,22 @@ div{
     color: #fff;
     padding: 10px;
 }
-#header{
-    width: 100%;
-    height: 50vh;
-    /* background-image: url(images/pfp_mobile.png);
-    background-size: cover;
-    background-position: center; */
-}
+
 
 .logo{
     width: 45px;
     border-radius: 25%;
 }
+
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+
 nav ul li{
     display: inline-block;
 
@@ -83,17 +81,39 @@ nav ul li a:hover::after{
 
 }
 
-.header-text{
+div.header-text{
+    
+    align-items: center;
 
     font-size:30px;
 
-    height:50vh;
-    
+    height: 100vh;
+
+    padding-top: 60%;    
 }
 
-.header-text h1{
+div a{
+    color:#caae0c;
+}
+div a:hover{
+    color:#032977;
+}
+
+#header{
+    width: 100%;
+    /* background-image: url(images/pfp_mobile.png);
+    background-size: cover;
+    background-position: center; */
+}
+
+.header-text {
 
     font-size: 30px;
+
+}
+.header-text h1{
+
+    font-size: 60px;
 
 }
 
@@ -101,70 +121,163 @@ nav ul li a:hover::after{
 
     color:#caae0c;
 
-    font-size: 50px;
+    font-size: 80px;
 
     }
 
     /* -----------about---------- */
-    /* #about {
+    #about {
 
         position:relative;
 
-    } */
-    div  ul li{
+        height: 100vh;
+
+    }
+
+    .row {
+
+        display:flex;
+
+        justify-content: space-between;
+
+        flex-wrap:wrap;
+
+    }
+
+    .about-col-1 {
+
+        flex-basis: 35%;
+    }
+
+    .about-col-2 {
+
+        flex-basis: 50%;
+    }
+
+    .sub-title {
+
+        font-size: 60px;
+
+        font-weight: 600;
+
+        color:#ffff;
+
+    }
+
+    .about-col-1 p {
+
+        line-height: 2;
+    }
+
+
+/* -------------experience---------- */
+
+
+
+    .tab-contents  ul li {
         list-style: none;
 
         justify-content:space-between;
 
-        text-align:center;
-    }
+        margin: 10px 0;
 
-    /* div #container p {
-        float: left;
-    } */
 
-    
+    }   
     
 
-    /* ------------experience---------- */
-
-    div ul li span{
-
-        color:#caae0c;
-    }
-
-    .tab-titles p {
+    .tab-contents ul li span{
 
         color:#caae0c;
 
-        display: inline-block;
+        font-size: 14px;
+    }
 
-        padding: 20px;
+    .tab-contents {
 
-        text-align: center;
+        display: none;
+
+        padding-left: 22px;
+    }
+
+    .tab-contents.active-tab {
+
+        display: block;
+
+
+    }
+    .tab-titles {
+
+        display: flex;
+
+        margin: 20px 0 30px;
+
+        padding-left: 55px;
+
+        
+    }
+
+    .tab-links {
+
+        margin-right: 50px;
+
+        font-size:  18px;
+
+        font-weight: 500;
+
+        position: relative;
+
+        cursor: pointer;
+    }
+
+    .tab-links.active-link::after {
+
+        width: 75%;
+
+    }
+
+    .tab-links::after {
+
+        content: '';
+
+        width: 0;
+
+        height: 3px;
+
+         background: #caae0c;
+
+         position: absolute;
+
+         left: 0;
+
+         bottom: -8px;
+
+         transition: 0.5s;
     }
 
     
-
 
     /*-----------Services Section-------*/
 
 .services {
 
-    text-align: center;
+    display:flex;
 
+    height: 100vh;
 }
 
 
 
-.services h1 {
+.sub-title h1 {
 
-    font-size: 2rem;
+        font-size: 60px;
 
-    color: #FFD700;
+        font-weight: 600;
 
-    margin-bottom: 20px;
+        color:#ffff;
 
+        height: 30vh;
+
+    padding-top: 10%;
 }
 
 
@@ -176,13 +289,8 @@ nav ul li a:hover::after{
 
     gap: 20px;
 
-}
+    height: 70vh;
 
-div a{
-    color:#caae0c;
-}
-div a:hover{
-    color:#032977;
 }
 
 
@@ -199,10 +307,38 @@ div a:hover{
 
     font-weight: bold;
 
+    max-height: 450px;
+
+}
+
+.services-item a {
+
+    color: #555;
+}
+
+.services-item a:hover {
+
+    color: #0A2540;
 }
 
 
     /* -------------user stories----------- */
+
+    .carousel.slide {
+
+        display:flex;
+
+        width: 100%;
+
+        margin: 0;
+
+        height: 25vh;  
+
+        padding-top: 5%;
+
+        background-color: #fff;
+
+    }
 
     .carousel-item {
 
@@ -226,6 +362,12 @@ div a:hover{
 
     }
 
+    .carousel-inner {
+
+        background-color: #fff;
+
+    }
+
     .carousel-item p {
 
         font-size: 1.1rem;
@@ -244,7 +386,7 @@ div a:hover{
     
     
 
-    .carousel-item-active, .carousel-item {
+    .carousel-item .active, .carousel-item {
 
         padding: 10px 10px;
 
@@ -286,19 +428,6 @@ div a:hover{
         color:#fff;
     }
 
-    .carousel.slide {
-
-        display:flex;
-
-        width: 100%;
-
-
-        margin: 0;
-
-        padding: 0;
-
-    }
-
     .carousel-control-prev, .carousel-control-next {
         position: absolute;
         top: 50%;
@@ -318,25 +447,28 @@ div a:hover{
 
 .contact {
 
-    padding: 60px 20px;
-
     text-align: center;
+
+    height: 70vh;  
+
+    padding-top: 5%; 
 
 }
 
 
 
-.contact h3 {
+.contact h1 {
 
-    font-size: 2rem;
 
     color: #FFD700;
 
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 
+    font-size: 60px;
+
+    font-weight: 600;
+    
 }
-
-
 
 .contact form {
 
@@ -351,6 +483,8 @@ div a:hover{
     max-width: 400px;
 
     margin: auto;
+    
+    padding-top: 5%;
 
 }
 
@@ -397,13 +531,13 @@ div a:hover{
     list-style: none;
 }
 
-/* Footer */
+/*-------------Footer -----------------*/
 
 .footer {
 
     text-align: center;
 
-    padding: 20px ;
+    height: 5vh;   
 
     background-color: #102D5B;
 
@@ -411,7 +545,7 @@ div a:hover{
 
 }
 
-    /* -----------css for small screen-------- */
+/* ---------- for small screen-------- */
 nav .fas{
     display: none;
     color:#032977;
@@ -433,7 +567,7 @@ nav ul{
     width: 200px;
     height: 100vh;
     padding-top: 5px;
-    z-index: 2;
+    z-index: 4;
     transition: right 0.5s;
 }
  nav ul li{
@@ -452,4 +586,42 @@ nav ul{
     font-size: 18px;
     position: relative;
 }
+
+.tab-titles {
+
+    display: flex;
+
+    margin: 20px 0 30px;
+
+    padding-top: 40%;
+
+}
+
+.row {
+
+    justify-content: center;
+
+}
+
+.about-col-1 {
+
+    text-align: center;
+
+    flex-basis: 80%;
+}
+
+.about-col-1 p {
+
+    line-height: 2;
+
+}
+
+.sub-title  {
+
+    margin-top: 10%;
+
+    padding-bottom:10%;
+
+}
+
 }
